@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Registro de Datos</title>
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      font-weight: bold;
+    }
+    button {
+      background-color: #28a745;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2 class="mb-4"> Estas en: -</h2>
+  <h2 id="pais" class="mb-4"></h2>
+  <h2 class="mb-4">Registro de Producto</h2>
+
+  <form id="registroForm">
+    <div class="form-group">
+      <label for="producto">Producto:</label>
+      <input type="text" class="form-control" id="producto" required>
+    </div>
+
+    <div class="form-group">
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" class="form-control" id="cantidad" required>
+    </div>
+
+    <div class="form-group">
+      <label for="codigo">Código:</label>
+      <input type="text" class="form-control" id="codigo" required>
+    </div>
+
+    <button type="button" class="btn btn-primary" onclick="registrarDatos()">Guardar</button>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script src="main.js"></script>
+
+</body>
+</html>
